@@ -4,19 +4,23 @@
 In this project, I implemented a complete data pipeline using Spotify. I integrated with the Spotify API to extract data and deployed the extraction code on AWS Lambda. I added triggers to run the extraction automatically and wrote a transformation function. I also set up automated triggers for the transformation process and ensured proper storage of files on S3. Finally, I built analytics tables on the data files using AWS Glue and Athena to enable detailed analysis.
 
 ## Overview
+
 The project leverages below AWS services:
 
 **AWS Lambda:** Handles data extraction and transformation.
+
 **Amazon CloudWatch:** Schedules and triggers Lambda functions.
+
 **Amazon S3:** Stores both raw and transformed data.
+
 **AWS Glue:** Infers schema and creates a data catalog.
+
 **Amazon Athena:** Queries data stored in S3.
 
 ## Architecture
 
 ![Data Flow Diagram](https://github.com/jayanthgundagoni/Spotify-Data-Pipeline-Project/blob/main/Spotify_DFD.jpg)
 
-Sure, here's a detailed paraphrase:
 
 **Data Extraction:** Every day, an AWS Lambda function is automatically triggered by Amazon CloudWatch. This function accesses the Spotify API to gather data. Once collected, this data is saved in its raw form into an Amazon S3 bucket.
 
