@@ -29,3 +29,7 @@ The project leverages below AWS services:
 **Data Cataloging:** AWS Glue is employed to automatically analyze the format and structure of the transformed data stored in the S3 bucket. This process creates a detailed data catalog that documents the contents and schema of the data, making it easier to understand and use for further analysis.
 
 **Querying:** To perform queries on the data stored in S3, Amazon Athena is utilized. This service allows users to run standard SQL queries directly on the data stored in Amazon S3, providing quick and efficient access to the information for analysis and reporting purposes.
+
+**Conclusion:**
+
+By leveraging AWS Lambda, S3, AWS Glue, and Athena, this data pipeline achieves seamless integration with Spotify’s API, ensuring reliable data extraction, transformation, and analysis capabilities. 
